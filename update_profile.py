@@ -215,22 +215,22 @@ def render(mode, config, stats, portrait):
         f'<text x="24" y="{76 + index * 8.25:g}" xml:space="preserve" textLength="{len(line) * 4.2:g}" lengthAdjust="spacingAndGlyphs">{escape(line)}</text>'
         for index, line in enumerate(portrait.splitlines()) if line
     )
-    projects = "\n".join(text(400, 270 + index * 26, project) for index, project in enumerate(config["projects"]))
     return f'''<svg xmlns="http://www.w3.org/2000/svg" width="880" height="548" viewBox="0 0 880 548" role="img" aria-labelledby="title desc">
 <title id="title">{escape(config["name"])} — GitHub profile</title>
-<desc id="desc">ASCII style portrait. Detected repository languages: {escape(", ".join(stats["languages"]) or "No language data")}. {period}; {stats["scope"]} accessible repositories, default branches, non-merge commits authored by {escape(config["username"])}. {stats["commits"]} commits, {stats["additions"]} lines added, {stats["deletions"]} lines removed, {stats["active_days"]} active days. Line counts include all tracked text files.</desc>
+<desc id="desc">{escape(config["name"])}. {escape(config["role"])}. ASCII style portrait. Detected repository languages: {escape(", ".join(stats["languages"]) or "No language data")}. {period}; {stats["scope"]} accessible repositories, default branches, non-merge commits authored by {escape(config["username"])}. {stats["commits"]} commits, {stats["additions"]} lines added, {stats["deletions"]} lines removed, {stats["active_days"]} active days. Line counts include all tracked text files.</desc>
 <rect x="1" y="1" width="878" height="546" rx="12" fill="{palette["bg"]}" stroke="{palette["border"]}"/>
 <g font-family="'DejaVu Sans Mono', 'SFMono-Regular', Consolas, monospace">
 {text(28, 34, "●", palette["orange"], 11)}{text(48, 34, "●", palette["green"], 11)}{text(68, 34, "●", palette["blue"], 11)}
 {text(101, 34, "~/" + config["username"], palette["muted"], 12)}
 <g fill="{palette["muted"]}" font-size="7" font-weight="600">{art}</g>
-{text(400, 83, config["username"].lower() + "@github", palette["blue"], 16, 600)}
-<path d="M400 101H840" stroke="{palette["border"]}"/>
-{row(135, "Name:", config["name"])}
-{row(164, "GitHub since:", stats["created_at"][:10])}
-{row(193, "Top languages:", language_summary(stats["languages"]))}
-{section(240, "Public projects")}
-{projects}
+{text(400, 83, config["name"], palette["blue"], 18, 600)}
+{text(400, 110, config["role"], palette["text"], 14)}
+<path d="M400 130H840" stroke="{palette["border"]}"/>
+{row(163, "GitHub since:", stats["created_at"][:10])}
+{row(192, "Top languages:", language_summary(stats["languages"]))}
+{section(240, "Contact")}
+{text(400, 270, config["contact"]["linkedin"], palette["text"], 13)}
+{text(400, 301, config["contact"]["email"], palette["text"], 13)}
 {section(362, "Activity · " + period)}
 {row(393, "Commits:", f'{stats["commits"]:,}')}
 {row(422, "Lines added:", f'+{stats["additions"]:,}', palette["green"])}
