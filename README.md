@@ -1,16 +1,19 @@
-## Hi there 👋
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/profile-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="assets/profile-light.svg">
+  <img width="100%" alt="Lorenzo Gentile — languages detected from active repositories, commits, lines added and removed, and active days across accessible public and private repositories." src="assets/profile-dark.svg">
+</picture>
 
-<!--
-**LorenzoGentile/LorenzoGentile** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+[LinkedIn](https://www.linkedin.com/in/lorenzo-gentile) · [Email](mailto:lorengentile1892@gmail.com)
 
-Here are some ideas to get you started:
+Exploring microstructure optimisation, genetic algorithms and LLM tooling.
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/activity-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="assets/activity-light.svg">
+  <img width="100%" alt="Coding rhythm — commits by weekday and time of day in Europe/Rome, and languages by code size across active repositories." src="assets/activity-dark.svg">
+</picture>
+
+<sub>Activity across accessible public and private repositories. <a href="docs/profile-stats.md">How these numbers are counted</a>.</sub>
+
+<!-- Edit profile.json to change the profile text and statistics period. -->
