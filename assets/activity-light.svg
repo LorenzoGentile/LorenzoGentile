@@ -10,24 +10,24 @@
 <text x="468" y="102" fill="#9a4800" font-size="14" text-anchor="start">By time of day</text>
 <text x="28" y="133" fill="#24292f" font-size="12" text-anchor="start">Mon</text>
 <rect x="75" y="125" width="196" height="7" rx="3.5" fill="#d0d7de"/>
-<rect x="75" y="125" width="135.66" height="7" rx="3.5" fill="#0969da"/>
-<text x="413" y="133" fill="#57606a" font-size="11" text-anchor="end">174 · 20.8%</text>
+<rect x="75" y="125" width="135.49" height="7" rx="3.5" fill="#0969da"/>
+<text x="413" y="133" fill="#57606a" font-size="11" text-anchor="end">174 · 20.7%</text>
 <text x="28" y="160" fill="#24292f" font-size="12" text-anchor="start">Tue</text>
 <rect x="75" y="152" width="196" height="7" rx="3.5" fill="#d0d7de"/>
-<rect x="75" y="152" width="141.11" height="7" rx="3.5" fill="#0969da"/>
-<text x="413" y="160" fill="#57606a" font-size="11" text-anchor="end">181 · 21.6%</text>
+<rect x="75" y="152" width="141.72" height="7" rx="3.5" fill="#0969da"/>
+<text x="413" y="160" fill="#57606a" font-size="11" text-anchor="end">182 · 21.7%</text>
 <text x="28" y="187" fill="#24292f" font-size="12" text-anchor="start">Wed</text>
 <rect x="75" y="179" width="196" height="7" rx="3.5" fill="#d0d7de"/>
-<rect x="75" y="179" width="138.77" height="7" rx="3.5" fill="#0969da"/>
+<rect x="75" y="179" width="138.61" height="7" rx="3.5" fill="#0969da"/>
 <text x="413" y="187" fill="#57606a" font-size="11" text-anchor="end">178 · 21.2%</text>
 <text x="28" y="214" fill="#24292f" font-size="12" text-anchor="start">Thu</text>
 <rect x="75" y="206" width="196" height="7" rx="3.5" fill="#d0d7de"/>
-<rect x="75" y="206" width="145.01" height="7" rx="3.5" fill="#0969da"/>
+<rect x="75" y="206" width="144.84" height="7" rx="3.5" fill="#0969da"/>
 <text x="413" y="214" fill="#57606a" font-size="11" text-anchor="end">186 · 22.2%</text>
 <text x="28" y="241" fill="#24292f" font-size="12" text-anchor="start">Fri</text>
 <rect x="75" y="233" width="196" height="7" rx="3.5" fill="#d0d7de"/>
-<rect x="75" y="233" width="91.22" height="7" rx="3.5" fill="#0969da"/>
-<text x="413" y="241" fill="#57606a" font-size="11" text-anchor="end">117 · 14.0%</text>
+<rect x="75" y="233" width="91.11" height="7" rx="3.5" fill="#0969da"/>
+<text x="413" y="241" fill="#57606a" font-size="11" text-anchor="end">117 · 13.9%</text>
 <text x="28" y="268" fill="#24292f" font-size="12" text-anchor="start">Sat</text>
 <rect x="75" y="260" width="196" height="7" rx="3.5" fill="#d0d7de"/>
 <rect x="75" y="260" width="0.78" height="7" rx="3.5" fill="#0969da"/>
@@ -37,17 +37,17 @@
 <rect x="75" y="287" width="0.78" height="7" rx="3.5" fill="#0969da"/>
 <text x="413" y="295" fill="#57606a" font-size="11" text-anchor="end">1 · 0.1%</text>
 <text x="468" y="133" fill="#24292f" font-size="11" text-anchor="start">Morning 06–12</text>
-<text x="840" y="133" fill="#57606a" font-size="11" text-anchor="end">254 · 30.3%</text>
+<text x="840" y="133" fill="#57606a" font-size="11" text-anchor="end">255 · 30.4%</text>
 <rect x="468" y="142" width="372" height="7" rx="3.5" fill="#d0d7de"/>
-<rect x="468" y="142" width="112.75" height="7" rx="3.5" fill="#1a7f37"/>
+<rect x="468" y="142" width="113.06" height="7" rx="3.5" fill="#1a7f37"/>
 <text x="468" y="179" fill="#24292f" font-size="11" text-anchor="start">Afternoon 12–18</text>
 <text x="840" y="179" fill="#57606a" font-size="11" text-anchor="end">503 · 60.0%</text>
 <rect x="468" y="188" width="372" height="7" rx="3.5" fill="#d0d7de"/>
-<rect x="468" y="188" width="223.29" height="7" rx="3.5" fill="#1a7f37"/>
+<rect x="468" y="188" width="223.02" height="7" rx="3.5" fill="#1a7f37"/>
 <text x="468" y="225" fill="#24292f" font-size="11" text-anchor="start">Evening 18–24</text>
 <text x="840" y="225" fill="#57606a" font-size="11" text-anchor="end">81 · 9.7%</text>
 <rect x="468" y="234" width="372" height="7" rx="3.5" fill="#d0d7de"/>
-<rect x="468" y="234" width="35.96" height="7" rx="3.5" fill="#1a7f37"/>
+<rect x="468" y="234" width="35.91" height="7" rx="3.5" fill="#1a7f37"/>
 <text x="468" y="271" fill="#24292f" font-size="11" text-anchor="start">Night 00–06</text>
 <text x="840" y="271" fill="#57606a" font-size="11" text-anchor="end">0 · 0.0%</text>
 <rect x="468" y="280" width="372" height="7" rx="3.5" fill="#d0d7de"/>
