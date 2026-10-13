@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="880" height="548" viewBox="0 0 880 548" role="img" aria-labelledby="title desc">
 <title id="title">Lorenzo Gentile — GitHub profile</title>
-<desc id="desc">ASCII style portrait. Python, R. Last 12 months; Public + private accessible repositories, default branches, non-merge commits authored by LorenzoGentile. 778 commits, 576050 lines added, 138565 lines removed, 184 active days. Line counts include all tracked text files.</desc>
+<desc id="desc">ASCII style portrait. Detected repository languages: Python, TypeScript, Jupyter Notebook, PLpgSQL, Shell, HCL, HTML, MDX, JavaScript, Go, CSS, Makefile, Go Template, Dockerfile, Mako, GLSL. Last 12 months; Public + private accessible repositories, default branches, non-merge commits authored by LorenzoGentile. 778 commits, 576050 lines added, 138565 lines removed, 184 active days. Line counts include all tracked text files.</desc>
 <rect x="1" y="1" width="878" height="546" rx="12" fill="#0d1117" stroke="#30363d"/>
 <g font-family="'DejaVu Sans Mono', 'SFMono-Regular', Consolas, monospace">
 <text x="28" y="34" fill="#ffa657" font-size="11" font-weight="500">●</text><text x="48" y="34" fill="#7ee787" font-size="11" font-weight="500">●</text><text x="68" y="34" fill="#58a6ff" font-size="11" font-weight="500">●</text>
@@ -54,7 +54,7 @@
 <path d="M400 101H840" stroke="#30363d"/>
 <text x="400" y="135" fill="#ffa657" font-size="14" font-weight="500">Name:</text><path d="M452.5 131H840" stroke="#30363d" stroke-width="2" stroke-dasharray="2 6"/><text x="840" y="135" fill="#c9d1d9" font-size="14" font-weight="500" text-anchor="end" paint-order="stroke" stroke="#0d1117" stroke-width="8" stroke-linejoin="round">Lorenzo Gentile</text>
 <text x="400" y="164" fill="#ffa657" font-size="14" font-weight="500">GitHub since:</text><path d="M520.5 160H840" stroke="#30363d" stroke-width="2" stroke-dasharray="2 6"/><text x="840" y="164" fill="#c9d1d9" font-size="14" font-weight="500" text-anchor="end" paint-order="stroke" stroke="#0d1117" stroke-width="8" stroke-linejoin="round">2018-02-26</text>
-<text x="400" y="193" fill="#ffa657" font-size="14" font-weight="500">Languages:</text><path d="M495.0 189H840" stroke="#30363d" stroke-width="2" stroke-dasharray="2 6"/><text x="840" y="193" fill="#c9d1d9" font-size="14" font-weight="500" text-anchor="end" paint-order="stroke" stroke="#0d1117" stroke-width="8" stroke-linejoin="round">Python, R</text>
+<text x="400" y="193" fill="#ffa657" font-size="14" font-weight="500">Top languages:</text><path d="M529.0 189H840" stroke="#30363d" stroke-width="2" stroke-dasharray="2 6"/><text x="840" y="193" fill="#c9d1d9" font-size="14" font-weight="500" text-anchor="end" paint-order="stroke" stroke="#0d1117" stroke-width="8" stroke-linejoin="round">Python, TypeScript</text>
 <text x="400" y="240" fill="#58a6ff" font-size="14" font-weight="500">— Public projects</text><path d="M557.5 236H840" stroke="#30363d"/>
 <text x="400" y="270" fill="#c9d1d9" font-size="14" font-weight="500">Microstructure optimisation</text>
 <text x="400" y="296" fill="#c9d1d9" font-size="14" font-weight="500">Genetic algorithms</text>

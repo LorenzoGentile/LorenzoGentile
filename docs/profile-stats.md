@@ -3,7 +3,9 @@
 The card shows commits, lines added, lines removed and active days during the last
 12 months. Set `stats.period` in `profile.json` to `all-time` for all available
 history, or `last-year` for a rolling 12-month window. The second card breaks down
-commits by weekday and time of day, plus primary languages of active repositories.
+commits by weekday and time of day, plus languages detected in active repositories.
+The profile's top languages are generated from the same data; no language list
+is maintained manually in `profile.json` or the README.
 
 ## Counting rules
 
@@ -21,16 +23,20 @@ commits by weekday and time of day, plus primary languages of active repositorie
 - Active days, weekdays and time-of-day buckets use `stats.timezone` (initially
   `Europe/Rome`), including daylight-saving changes. The date window uses commit
   dates. Morning is 06–12, afternoon 12–18, evening 18–24 and night 00–06.
-- Languages count each non-fork repository with your commits in the selected
-  period once, using its current primary language reported by GitHub. Percentages
-  are shares of those repositories, not shares of your code or coding time. Small
-  categories are grouped when more than five languages are present.
+- Languages include every language returned by GitHub's repository languages API
+  for each non-fork repository with your commits in the selected period. The
+  percentages use the sum of current code bytes per language, including secondary
+  languages. These are repository contents, not just code authored by you or time
+  spent coding. Larger repositories contribute more weight. Empty results are
+  omitted; small categories are grouped when more than five languages are present.
+  The top card shows up to three leading languages that fit its compact row.
 - Only totals appear in the generated cards and logs. No private repository
   names, source, commit messages, hashes or per-repository statistics are saved.
 - API failures abort the refresh before any card is written. Token permissions
   determine coverage; the script cannot discover repositories hidden from it.
 
 GitHub documents the underlying [commit history and line-count fields](https://docs.github.com/en/graphql/reference/commits).
+Language sizes come from [List repository languages](https://docs.github.com/en/rest/repos/repos#list-repository-languages).
 
 ## Automatic refresh
 

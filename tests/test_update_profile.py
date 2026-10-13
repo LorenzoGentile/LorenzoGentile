@@ -14,7 +14,7 @@ import update_profile as profile
 
 NOW = datetime(2026, 10, 13, 10, tzinfo=timezone.utc)
 CONFIG = {
-    "username": "example", "name": "A & B", "languages": ["Python", "R"],
+    "username": "example", "name": "A & B",
     "projects": ["<project>"], "stats": {"includePrivate": True, "period": "last-year"},
 }
 USER = {"node_id": "account-id", "created_at": "2018-02-26T10:00:00Z"}
@@ -54,6 +54,8 @@ class FakeGitHub:
         return [repository(1), repository(2, private=True)]
 
     def request(self, path, payload=None):
+        if path.endswith("/languages"):
+            return {"Python": 100, "Shell": 25} if "repository-1/" in path else {"TypeScript": 100, "CSS": 25}
         if path != "graphql":
             return USER
         variables = payload["variables"]
@@ -73,7 +75,7 @@ class StatisticsTests(unittest.TestCase):
         self.assertNotIn("shared", json.dumps(stats))
         self.assertEqual(sum(stats["weekdays"].values()), stats["commits"])
         self.assertEqual(sum(stats["times"].values()), stats["commits"])
-        self.assertEqual(stats["languages"], {"Python": 1, "TypeScript": 1})
+        self.assertEqual(stats["languages"], {"Python": 100, "TypeScript": 100, "CSS": 25, "Shell": 25})
 
     def test_public_only_does_not_read_private_repositories(self):
         config = copy.deepcopy(CONFIG)
@@ -110,11 +112,12 @@ class StatisticsTests(unittest.TestCase):
             for expected in ("A & B", "<project>", "Commits:", "+35", "−11", "Public + private", "Last 12 months"):
                 self.assertIn(expected, text)
             self.assertNotIn("Stars:", text)
+            self.assertIn("Python, TypeScript, CSS", text)
             self.assertNotIn("repository-2", svg)
             activity = profile.render_activity(mode, CONFIG, stats)
             text = " ".join(ET.fromstring(activity).itertext())
             self.assertIn("Europe/Rome", text)
-            self.assertIn("50.0%", text)
+            self.assertIn("40.0%", text)
             self.assertNotIn("repository-2", activity)
 
     def test_coding_patterns_use_local_time_and_daylight_saving(self):
@@ -142,6 +145,19 @@ class StatisticsTests(unittest.TestCase):
             text = " ".join(ET.fromstring(profile.render_activity(mode, CONFIG, stats)).itertext())
             self.assertIn("No commits in this period", text)
             self.assertNotIn("Most commits", text)
+            summary = " ".join(ET.fromstring(profile.render(mode, CONFIG, stats, "portrait")).itertext())
+            self.assertIn("No language data", summary)
+
+    def test_language_fetch_failure_aborts_and_empty_languages_are_omitted(self):
+        api = FakeGitHub()
+        original_request = api.request
+        for response in ({}, {"Python": -1}):
+            with patch.object(api, "request", side_effect=lambda path, payload=None: response if path.endswith("/languages") else original_request(path, payload)):
+                if response:
+                    with self.assertRaisesRegex(RuntimeError, "language statistics"):
+                        profile.fetch_stats(CONFIG, api, NOW)
+                else:
+                    self.assertEqual(profile.fetch_stats(CONFIG, api, NOW)["languages"], {})
 
     def test_api_failure_preserves_existing_cards(self):
         with tempfile.TemporaryDirectory() as directory:

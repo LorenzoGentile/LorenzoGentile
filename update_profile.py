@@ -154,7 +154,12 @@ def fetch_stats(config, api, now=None):
                 raise RuntimeError("GitHub returned incomplete pagination.")
             cursor = next_cursor
         if contributed and not repo.get("fork", False):
-            languages[repo.get("language") or "Unclassified"] += 1
+            owner = quote(repo["owner"]["login"], safe="")
+            name = quote(repo["name"], safe="")
+            detected = api.request(f"repos/{owner}/{name}/languages")
+            if not isinstance(detected, dict) or not all(type(size) is int and size >= 0 for size in detected.values()):
+                raise RuntimeError("GitHub returned incomplete language statistics.")
+            languages.update({language: size for language, size in detected.items() if size > 0})
 
     # Only aggregate data leaves this function. No private names, hashes or messages.
     return {
@@ -172,6 +177,18 @@ PALETTES = {
     "dark": {"bg": "#0d1117", "border": "#30363d", "text": "#c9d1d9", "muted": "#8b949e", "blue": "#58a6ff", "orange": "#ffa657", "green": "#7ee787", "red": "#ff7b72"},
     "light": {"bg": "#ffffff", "border": "#d0d7de", "text": "#24292f", "muted": "#57606a", "blue": "#0969da", "orange": "#9a4800", "green": "#1a7f37", "red": "#cf222e"},
 }
+
+
+def language_summary(languages):
+    """Fit the leading detected languages on the compact profile card."""
+    names = list(languages)
+    if not names:
+        return "No language data"
+    selected = names[:3]
+    while len(", ".join(selected)) > 32 and len(selected) > 1:
+        selected.pop()
+    summary = ", ".join(selected)
+    return summary if len(summary) <= 32 else summary[:31] + "…"
 
 
 def render(mode, config, stats, portrait):
@@ -201,7 +218,7 @@ def render(mode, config, stats, portrait):
     projects = "\n".join(text(400, 270 + index * 26, project) for index, project in enumerate(config["projects"]))
     return f'''<svg xmlns="http://www.w3.org/2000/svg" width="880" height="548" viewBox="0 0 880 548" role="img" aria-labelledby="title desc">
 <title id="title">{escape(config["name"])} — GitHub profile</title>
-<desc id="desc">ASCII style portrait. {escape(", ".join(config["languages"]))}. {period}; {stats["scope"]} accessible repositories, default branches, non-merge commits authored by {escape(config["username"])}. {stats["commits"]} commits, {stats["additions"]} lines added, {stats["deletions"]} lines removed, {stats["active_days"]} active days. Line counts include all tracked text files.</desc>
+<desc id="desc">ASCII style portrait. Detected repository languages: {escape(", ".join(stats["languages"]) or "No language data")}. {period}; {stats["scope"]} accessible repositories, default branches, non-merge commits authored by {escape(config["username"])}. {stats["commits"]} commits, {stats["additions"]} lines added, {stats["deletions"]} lines removed, {stats["active_days"]} active days. Line counts include all tracked text files.</desc>
 <rect x="1" y="1" width="878" height="546" rx="12" fill="{palette["bg"]}" stroke="{palette["border"]}"/>
 <g font-family="'DejaVu Sans Mono', 'SFMono-Regular', Consolas, monospace">
 {text(28, 34, "●", palette["orange"], 11)}{text(48, 34, "●", palette["green"], 11)}{text(68, 34, "●", palette["blue"], 11)}
@@ -211,7 +228,7 @@ def render(mode, config, stats, portrait):
 <path d="M400 101H840" stroke="{palette["border"]}"/>
 {row(135, "Name:", config["name"])}
 {row(164, "GitHub since:", stats["created_at"][:10])}
-{row(193, "Languages:", ", ".join(config["languages"]))}
+{row(193, "Top languages:", language_summary(stats["languages"]))}
 {section(240, "Public projects")}
 {projects}
 {section(362, "Activity · " + period)}
@@ -234,7 +251,7 @@ def render_activity(mode, config, stats):
     out = [
         '<svg xmlns="http://www.w3.org/2000/svg" width="880" height="610" viewBox="0 0 880 610" role="img" aria-labelledby="title desc">',
         '<title id="title">Coding rhythm</title>',
-        f'<desc id="desc">{html.escape(period)}. Commits by weekday and time of day in {html.escape(stats["timezone"])}. Languages are primary languages of non-fork repositories with authored commits, not coding time.</desc>',
+        f'<desc id="desc">{html.escape(period)}. Commits by weekday and time of day in {html.escape(stats["timezone"])}. Language shares use current code bytes reported by GitHub across non-fork repositories with authored commits, not personal authorship or coding time.</desc>',
         f'<rect x="1" y="1" width="878" height="608" rx="12" fill="{p["bg"]}" stroke="{p["border"]}"/>',
         '<g font-family="\'DejaVu Sans Mono\', \'SFMono-Regular\', Consolas, monospace">',
     ]
@@ -271,7 +288,7 @@ def render_activity(mode, config, stats):
         text(468, 315, "No commits in this period", p["muted"], 11)
     out.append(f'<path d="M28 339H852" stroke="{p["border"]}"/>')
     text(28, 371, "Languages across active repositories", p["orange"], 14)
-    text(28, 393, "Primary language per repository · not time spent coding", p["muted"], 11)
+    text(28, 393, "Current code size (bytes) · GitHub language detection", p["muted"], 11)
     languages = list(stats["languages"].items())
     if len(languages) > 5:
         languages = languages[:4] + [("Other languages", sum(count for _, count in languages[4:]))]
@@ -281,7 +298,7 @@ def render_activity(mode, config, stats):
         fraction = count / total
         text(28, y, language, size=11)
         bar(220, y - 8, 425, fraction, p["blue"])
-        text(840, y, f'{count} {"repo" if count == 1 else "repos"} · {fraction:.1%}', p["muted"], 11, "end")
+        text(840, y, f'{fraction:.1%}', p["muted"], 11, "end")
     if not languages:
         text(28, 426, "No repository language data for this period", p["muted"], 12)
     text(28, 583, "Default branches · non-merge commits · unique commit hashes", p["muted"], 10)

@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="880" height="610" viewBox="0 0 880 610" role="img" aria-labelledby="title desc">
 <title id="title">Coding rhythm</title>
-<desc id="desc">Last 12 months. Commits by weekday and time of day in Europe/Rome. Languages are primary languages of non-fork repositories with authored commits, not coding time.</desc>
+<desc id="desc">Last 12 months. Commits by weekday and time of day in Europe/Rome. Language shares use current code bytes reported by GitHub across non-fork repositories with authored commits, not personal authorship or coding time.</desc>
 <rect x="1" y="1" width="878" height="608" rx="12" fill="#ffffff" stroke="#d0d7de"/>
 <g font-family="'DejaVu Sans Mono', 'SFMono-Regular', Consolas, monospace">
 <text x="28" y="36" fill="#0969da" font-size="18" text-anchor="start">Coding rhythm</text>
@@ -53,27 +53,27 @@
 <text x="468" y="315" fill="#57606a" font-size="11" text-anchor="start">Most commits on Thursday</text>
 <path d="M28 339H852" stroke="#d0d7de"/>
 <text x="28" y="371" fill="#9a4800" font-size="14" text-anchor="start">Languages across active repositories</text>
-<text x="28" y="393" fill="#57606a" font-size="11" text-anchor="start">Primary language per repository · not time spent coding</text>
+<text x="28" y="393" fill="#57606a" font-size="11" text-anchor="start">Current code size (bytes) · GitHub language detection</text>
 <text x="28" y="426" fill="#24292f" font-size="11" text-anchor="start">Python</text>
 <rect x="220" y="418" width="425" height="7" rx="3.5" fill="#d0d7de"/>
-<rect x="220" y="418" width="278.91" height="7" rx="3.5" fill="#0969da"/>
-<text x="840" y="426" fill="#57606a" font-size="11" text-anchor="end">21 repos · 65.6%</text>
+<rect x="220" y="418" width="258.84" height="7" rx="3.5" fill="#0969da"/>
+<text x="840" y="426" fill="#57606a" font-size="11" text-anchor="end">60.9%</text>
 <text x="28" y="455" fill="#24292f" font-size="11" text-anchor="start">TypeScript</text>
 <rect x="220" y="447" width="425" height="7" rx="3.5" fill="#d0d7de"/>
-<rect x="220" y="447" width="39.84" height="7" rx="3.5" fill="#0969da"/>
-<text x="840" y="455" fill="#57606a" font-size="11" text-anchor="end">3 repos · 9.4%</text>
-<text x="28" y="484" fill="#24292f" font-size="11" text-anchor="start">Unclassified</text>
+<rect x="220" y="447" width="129.65" height="7" rx="3.5" fill="#0969da"/>
+<text x="840" y="455" fill="#57606a" font-size="11" text-anchor="end">30.5%</text>
+<text x="28" y="484" fill="#24292f" font-size="11" text-anchor="start">Jupyter Notebook</text>
 <rect x="220" y="476" width="425" height="7" rx="3.5" fill="#d0d7de"/>
-<rect x="220" y="476" width="26.56" height="7" rx="3.5" fill="#0969da"/>
-<text x="840" y="484" fill="#57606a" font-size="11" text-anchor="end">2 repos · 6.2%</text>
-<text x="28" y="513" fill="#24292f" font-size="11" text-anchor="start">Go</text>
+<rect x="220" y="476" width="12.25" height="7" rx="3.5" fill="#0969da"/>
+<text x="840" y="484" fill="#57606a" font-size="11" text-anchor="end">2.9%</text>
+<text x="28" y="513" fill="#24292f" font-size="11" text-anchor="start">PLpgSQL</text>
 <rect x="220" y="505" width="425" height="7" rx="3.5" fill="#d0d7de"/>
-<rect x="220" y="505" width="13.28" height="7" rx="3.5" fill="#0969da"/>
-<text x="840" y="513" fill="#57606a" font-size="11" text-anchor="end">1 repo · 3.1%</text>
+<rect x="220" y="505" width="10.14" height="7" rx="3.5" fill="#0969da"/>
+<text x="840" y="513" fill="#57606a" font-size="11" text-anchor="end">2.4%</text>
 <text x="28" y="542" fill="#24292f" font-size="11" text-anchor="start">Other languages</text>
 <rect x="220" y="534" width="425" height="7" rx="3.5" fill="#d0d7de"/>
-<rect x="220" y="534" width="66.41" height="7" rx="3.5" fill="#0969da"/>
-<text x="840" y="542" fill="#57606a" font-size="11" text-anchor="end">5 repos · 15.6%</text>
+<rect x="220" y="534" width="14.13" height="7" rx="3.5" fill="#0969da"/>
+<text x="840" y="542" fill="#57606a" font-size="11" text-anchor="end">3.3%</text>
 <text x="28" y="583" fill="#57606a" font-size="10" text-anchor="start">Default branches · non-merge commits · unique commit hashes</text>
 <text x="840" y="583" fill="#57606a" font-size="10" text-anchor="end">Updated 2026-10-13</text>
 </g></svg>
