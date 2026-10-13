@@ -2,10 +2,14 @@
 
 The card shows commits, lines added, lines removed and active days during the last
 12 months. Set `stats.period` in `profile.json` to `all-time` for all available
-history, or `last-year` for a rolling 12-month window. The second card breaks down
+history, or `last-year` for a rolling 12-month window. The activity card breaks down
 commits by weekday and time of day, plus languages detected in active repositories.
 The profile's top languages are generated from the same data; no language list
 is maintained manually in `profile.json` or the README.
+
+The terminal cards have a short command/output entrance animation. Static
+renderers and viewers requesting reduced motion see the complete card immediately.
+Contact links remain at the bottom of the README.
 
 ## Counting rules
 
@@ -88,3 +92,8 @@ The coding-pattern sections are inspired by
 matching this profile's ASCII card. Hours spent coding, editors and AI coding
 usage need separate telemetry such as WakaTime; they cannot be inferred from
 GitHub commits and are not fabricated here.
+
+The terminal presentation is inspired by
+[GitHub README Insight Terminal ASCII](https://github.com/seuthootDev/github-readme-insight-terminal-ascii).
+The cards are implemented here with the existing Python collector and original SVG
+rendering code; no external rendering service receives the private token or data.

@@ -191,6 +191,29 @@ def language_summary(languages):
     return summary if len(summary) <= 32 else summary[:31] + "…"
 
 
+def terminal_style():
+    # Visible by default in static SVG renderers; animate only the entrance.
+    return """<style>
+    .command { animation: type-in 1.1s steps(24, end) both; }
+    .result { animation: reveal 1.5s ease-out both; }
+    .prompt { animation: reveal 1.8s ease-out both; }
+    @keyframes type-in { from { clip-path: inset(0 100% 0 0); } to { clip-path: inset(0); } }
+    @keyframes reveal { 0%, 75% { opacity: 0; } 100% { opacity: 1; } }
+    @media (prefers-reduced-motion: reduce) { .command, .result, .prompt { animation: none; } }
+    </style>"""
+
+
+def terminal_header(p, username, command):
+    escape = html.escape
+    return f'''<path d="M1 45H879" stroke="{p['border']}"/>
+<circle cx="25" cy="24" r="4" fill="{p['red']}"/>
+<circle cx="43" cy="24" r="4" fill="{p['orange']}"/>
+<circle cx="61" cy="24" r="4" fill="{p['green']}"/>
+<text x="440" y="28" text-anchor="middle" font-size="11" fill="{p['muted']}">{escape(username)} — zsh</text>
+<text x="28" y="77" font-size="13" fill="{p['green']}">❯</text>
+<text class="command" x="48" y="77" font-size="13" fill="{p['text']}">{escape(command)}</text>'''
+
+
 def render(mode, config, stats, portrait):
     palette = PALETTES[mode]
     escape = lambda value: html.escape(str(value), quote=True)
@@ -210,39 +233,39 @@ def render(mode, config, stats, portrait):
         return text(400, y, f"— {label}", palette["blue"]) + f'<path d="M{430 + len(label) * 8.5} {y - 4}H840" stroke="{palette["border"]}"/>'
 
     period = "All time" if config["stats"]["period"] == "all-time" else "Last 12 months"
-    # Preserve the original card's ASCII portrait and column positions.
     art = "\n".join(
-        f'<text x="24" y="{76 + index * 8.25:g}" xml:space="preserve" textLength="{len(line) * 4.2:g}" lengthAdjust="spacingAndGlyphs">{escape(line)}</text>'
+        f'<text x="24" y="{132 + index * 8.25:g}" xml:space="preserve" textLength="{len(line) * 4.2:g}" lengthAdjust="spacingAndGlyphs">{escape(line)}</text>'
         for index, line in enumerate(portrait.splitlines()) if line
     )
-    return f'''<svg xmlns="http://www.w3.org/2000/svg" width="880" height="620" viewBox="0 0 880 620" role="img" aria-labelledby="title desc">
+    return f'''<svg xmlns="http://www.w3.org/2000/svg" width="880" height="600" viewBox="0 0 880 600" role="img" aria-labelledby="title desc">
 <title id="title">{escape(config["name"])} — GitHub profile</title>
-<desc id="desc">{escape(config["name"])}. {escape(config["role"])}. ASCII style portrait. Detected repository languages: {escape(", ".join(stats["languages"]) or "No language data")}. {period}; {stats["scope"]} accessible repositories, default branches, non-merge commits authored by {escape(config["username"])}. {stats["commits"]} commits, {stats["additions"]} lines added, {stats["deletions"]} lines removed, {stats["active_days"]} active days. Line counts include all tracked text files.</desc>
-<rect x="1" y="1" width="878" height="618" rx="12" fill="{palette["bg"]}" stroke="{palette["border"]}"/>
+<desc id="desc">{escape(config["name"])}. {escape(config["role"])}. ASCII style portrait. {period}; {stats["scope"]} accessible repositories, default branches, non-merge commits. {stats["commits"]} commits, {stats["additions"]} lines added, {stats["deletions"]} lines removed, {stats["active_days"]} active days. Line counts include all tracked text files.</desc>
+{terminal_style()}
+<rect x="1" y="1" width="878" height="598" rx="12" fill="{palette["bg"]}" stroke="{palette["border"]}"/>
 <g font-family="'DejaVu Sans Mono', 'SFMono-Regular', Consolas, monospace">
-{text(28, 34, "●", palette["orange"], 11)}{text(48, 34, "●", palette["green"], 11)}{text(68, 34, "●", palette["blue"], 11)}
-{text(101, 34, "~/" + config["username"], palette["muted"], 12)}
+{terminal_header(palette, config['username'], 'whoami --github')}
+<g class="result">
 <g fill="{palette["muted"]}" font-size="7" font-weight="600">{art}</g>
-{text(400, 83, config["name"], palette["blue"], 18, 600)}
-{text(400, 110, config["role"], palette["text"], 14)}
-<path d="M400 130H840" stroke="{palette["border"]}"/>
-{row(163, "GitHub since:", stats["created_at"][:10])}
-{row(192, "Top languages:", language_summary(stats["languages"]))}
-{section(240, "Interests")}
-{text(400, 270, " · ".join(config["interests"]), palette["text"], 12)}
-{section(312, "Contact")}
-{text(400, 342, config["contact"]["linkedin"], palette["text"], 13)}
-{text(400, 373, config["contact"]["email"], palette["text"], 13)}
-{section(434, "Activity · " + period)}
-{row(465, "Commits:", f'{stats["commits"]:,}')}
-{row(494, "Lines added:", f'+{stats["additions"]:,}', palette["green"])}
-{row(523, "Lines removed:", f'−{stats["deletions"]:,}', palette["red"])}
-{row(552, "Active days:", f'{stats["active_days"]:,}')}
-{text(28, 555, stats["scope"] + " · accessible repos", palette["muted"], 10)}
-{text(28, 573, "Default branches · non-merge commits", palette["muted"], 10)}
-{text(28, 591, "Updated " + stats["until"][:10], palette["muted"], 10)}
-{text(400, 591, "Lines include code, docs and generated files", palette["muted"], 10)}
-</g></svg>
+{text(400, 140, config["name"], palette["blue"], 18, 600)}
+{text(400, 168, config["role"])}
+<path d="M400 187H840" stroke="{palette["border"]}"/>
+{row(215, "GitHub since:", stats["created_at"][:10])}
+{row(244, "Top languages:", language_summary(stats["languages"]))}
+{section(292, "Interests")}
+{text(400, 320, " · ".join(config["interests"]), size=12)}
+{section(373, "Activity · " + period)}
+{row(407, "Commits:", f'{stats["commits"]:,}')}
+{row(436, "Lines added:", f'+{stats["additions"]:,}', palette["green"])}
+{row(465, "Lines removed:", f'−{stats["deletions"]:,}', palette["red"])}
+{row(494, "Active days:", f'{stats["active_days"]:,}')}
+{text(400, 522, "Lines include code, docs and generated files", palette["muted"], 10)}
+</g>
+<path d="M28 544H852" stroke="{palette["border"]}"/>
+<g class="prompt">
+{text(28, 575, '❯', palette['green'], 13)}
+{text(48, 575, '▌', palette['muted'], 13)}
+{text(840, 575, 'Updated ' + stats['until'][:10], palette['muted'], 10, attributes=' text-anchor="end"')}
+</g></g></svg>
 '''
 
 
@@ -251,11 +274,14 @@ def render_activity(mode, config, stats):
     p = PALETTES[mode]
     period = "All time" if config["stats"]["period"] == "all-time" else "Last 12 months"
     out = [
-        '<svg xmlns="http://www.w3.org/2000/svg" width="880" height="610" viewBox="0 0 880 610" role="img" aria-labelledby="title desc">',
+        '<svg xmlns="http://www.w3.org/2000/svg" width="880" height="660" viewBox="0 0 880 660" role="img" aria-labelledby="title desc">',
         '<title id="title">Coding rhythm</title>',
         f'<desc id="desc">{html.escape(period)}. Commits by weekday and time of day in {html.escape(stats["timezone"])}. Language shares use current code bytes reported by GitHub across non-fork repositories with authored commits, not personal authorship or coding time.</desc>',
-        f'<rect x="1" y="1" width="878" height="608" rx="12" fill="{p["bg"]}" stroke="{p["border"]}"/>',
+        terminal_style(),
+        f'<rect x="1" y="1" width="878" height="658" rx="12" fill="{p["bg"]}" stroke="{p["border"]}"/>',
         '<g font-family="\'DejaVu Sans Mono\', \'SFMono-Regular\', Consolas, monospace">',
+        terminal_header(p, config['username'], 'github activity --breakdown'),
+        '<g class="result" transform="translate(0 50)">',
     ]
 
     def text(x, y, value, color=None, size=12, anchor="start"):
@@ -266,7 +292,6 @@ def render_activity(mode, config, stats):
         if fraction:
             out.append(f'<rect x="{x}" y="{y}" width="{width * fraction:.2f}" height="7" rx="3.5" fill="{color}"/>')
 
-    text(28, 36, "Coding rhythm", p["blue"], 18)
     text(28, 60, f'{period} · {stats["scope"]} · {stats["timezone"]}', p["muted"], 11)
     text(28, 102, "By day of the week", p["orange"], 14)
     text(413, 102, "Scale: 0–30%", p["muted"], 10, "end")
@@ -306,7 +331,7 @@ def render_activity(mode, config, stats):
         text(28, 426, "No repository language data for this period", p["muted"], 12)
     text(28, 583, "Default branches · non-merge commits · unique commit hashes", p["muted"], 10)
     text(840, 583, "Updated " + stats["until"][:10], p["muted"], 10, "end")
-    out.append("</g></svg>\n")
+    out.append("</g></g></svg>\n")
     return "\n".join(out)
 
 

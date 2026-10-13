@@ -1,7 +1,7 @@
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/profile-dark.svg">
   <source media="(prefers-color-scheme: light)" srcset="assets/profile-light.svg">
-  <img width="100%" alt="Lorenzo Gentile, PhD — Co-Founder &amp; CTO at GenieAI. Interests: software development, startups, AI, finance and crypto. Contact details and GitHub activity." src="assets/profile-dark.svg">
+  <img width="100%" alt="Lorenzo Gentile, PhD — Co-Founder &amp; CTO at GenieAI. Interests: software development, startups, AI, finance and crypto. GitHub activity." src="assets/profile-dark.svg">
 </picture>
 
 <picture>

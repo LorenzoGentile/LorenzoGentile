@@ -111,7 +111,7 @@ class StatisticsTests(unittest.TestCase):
             svg = profile.render(mode, CONFIG, stats, "<&>\n ascii")
             root = ET.fromstring(svg)
             text = " ".join(root.itertext())
-            for expected in ("A & B", "Co-Founder & CTO", "linkedin.com/in/example", "example@example.com", "Commits:", "+35", "−11", "Public + private", "Last 12 months"):
+            for expected in ("A & B", "Co-Founder & CTO", "Commits:", "+35", "−11", "Public + private", "Last 12 months"):
                 self.assertIn(expected, text)
             self.assertNotIn("Stars:", text)
             self.assertIn("Python, TypeScript, CSS", text)
