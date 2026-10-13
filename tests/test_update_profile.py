@@ -15,7 +15,8 @@ import update_profile as profile
 NOW = datetime(2026, 10, 13, 10, tzinfo=timezone.utc)
 CONFIG = {
     "username": "example", "name": "A & B",
-    "projects": ["<project>"], "stats": {"includePrivate": True, "period": "last-year"},
+    "role": "Co-Founder & CTO", "contact": {"linkedin": "linkedin.com/in/example", "email": "example@example.com"},
+    "stats": {"includePrivate": True, "period": "last-year"},
 }
 USER = {"node_id": "account-id", "created_at": "2018-02-26T10:00:00Z"}
 
@@ -109,7 +110,7 @@ class StatisticsTests(unittest.TestCase):
             svg = profile.render(mode, CONFIG, stats, "<&>\n ascii")
             root = ET.fromstring(svg)
             text = " ".join(root.itertext())
-            for expected in ("A & B", "<project>", "Commits:", "+35", "−11", "Public + private", "Last 12 months"):
+            for expected in ("A & B", "Co-Founder & CTO", "linkedin.com/in/example", "example@example.com", "Commits:", "+35", "−11", "Public + private", "Last 12 months"):
                 self.assertIn(expected, text)
             self.assertNotIn("Stars:", text)
             self.assertIn("Python, TypeScript, CSS", text)

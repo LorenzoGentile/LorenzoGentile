@@ -1,12 +1,10 @@
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/profile-dark.svg">
   <source media="(prefers-color-scheme: light)" srcset="assets/profile-light.svg">
-  <img width="100%" alt="Lorenzo Gentile — languages detected from active repositories, commits, lines added and removed, and active days across accessible public and private repositories." src="assets/profile-dark.svg">
+  <img width="100%" alt="Lorenzo Gentile, PhD — Co-Founder &amp; CTO at GenieAI. Contact details, detected repository languages, commits, lines added and removed, and active days." src="assets/profile-dark.svg">
 </picture>
 
 [LinkedIn](https://www.linkedin.com/in/lorenzo-gentile) · [Email](mailto:lorengentile1892@gmail.com)
-
-Exploring microstructure optimisation, genetic algorithms and LLM tooling.
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/activity-dark.svg">

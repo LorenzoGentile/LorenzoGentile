@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="880" height="548" viewBox="0 0 880 548" role="img" aria-labelledby="title desc">
-<title id="title">Lorenzo Gentile — GitHub profile</title>
-<desc id="desc">ASCII style portrait. Detected repository languages: Python, TypeScript, Jupyter Notebook, PLpgSQL, Shell, HCL, HTML, MDX, JavaScript, Astro, Go, CSS, Makefile, Go Template, Dockerfile, Mako, GLSL. Last 12 months; Public + private accessible repositories, default branches, non-merge commits authored by LorenzoGentile. 838 commits, 619842 lines added, 140635 lines removed, 187 active days. Line counts include all tracked text files.</desc>
+<title id="title">Lorenzo Gentile, PhD — GitHub profile</title>
+<desc id="desc">Lorenzo Gentile, PhD. Co-Founder &amp; CTO at GenieAI. ASCII style portrait. Detected repository languages: Python, TypeScript, Jupyter Notebook, PLpgSQL, Shell, HCL, HTML, MDX, JavaScript, Astro, Go, CSS, Makefile, Go Template, Dockerfile, Mako, GLSL. Last 12 months; Public + private accessible repositories, default branches, non-merge commits authored by LorenzoGentile. 838 commits, 619842 lines added, 140635 lines removed, 187 active days. Line counts include all tracked text files.</desc>
 <rect x="1" y="1" width="878" height="546" rx="12" fill="#0d1117" stroke="#30363d"/>
 <g font-family="'DejaVu Sans Mono', 'SFMono-Regular', Consolas, monospace">
 <text x="28" y="34" fill="#ffa657" font-size="11" font-weight="500">●</text><text x="48" y="34" fill="#7ee787" font-size="11" font-weight="500">●</text><text x="68" y="34" fill="#58a6ff" font-size="11" font-weight="500">●</text>
@@ -50,15 +50,14 @@
 <text x="24" y="422.5" xml:space="preserve" textLength="348.6" lengthAdjust="spacingAndGlyphs">                      *%%%%%%%%=---:::.....          ...:::.-+*                    </text>
 <text x="24" y="430.75" xml:space="preserve" textLength="348.6" lengthAdjust="spacingAndGlyphs">  .                  -%%%%%%%%%%#+--::::...............:::: .-+*.                  </text>
 <text x="24" y="439" xml:space="preserve" textLength="348.6" lengthAdjust="spacingAndGlyphs"> ..                 :%%%%%%%%%%%%%%+--:::::......::::::::::  :=+#.                 </text></g>
-<text x="400" y="83" fill="#58a6ff" font-size="16" font-weight="600">lorenzogentile@github</text>
-<path d="M400 101H840" stroke="#30363d"/>
-<text x="400" y="135" fill="#ffa657" font-size="14" font-weight="500">Name:</text><path d="M452.5 131H840" stroke="#30363d" stroke-width="2" stroke-dasharray="2 6"/><text x="840" y="135" fill="#c9d1d9" font-size="14" font-weight="500" text-anchor="end" paint-order="stroke" stroke="#0d1117" stroke-width="8" stroke-linejoin="round">Lorenzo Gentile</text>
-<text x="400" y="164" fill="#ffa657" font-size="14" font-weight="500">GitHub since:</text><path d="M520.5 160H840" stroke="#30363d" stroke-width="2" stroke-dasharray="2 6"/><text x="840" y="164" fill="#c9d1d9" font-size="14" font-weight="500" text-anchor="end" paint-order="stroke" stroke="#0d1117" stroke-width="8" stroke-linejoin="round">2018-02-26</text>
-<text x="400" y="193" fill="#ffa657" font-size="14" font-weight="500">Top languages:</text><path d="M529.0 189H840" stroke="#30363d" stroke-width="2" stroke-dasharray="2 6"/><text x="840" y="193" fill="#c9d1d9" font-size="14" font-weight="500" text-anchor="end" paint-order="stroke" stroke="#0d1117" stroke-width="8" stroke-linejoin="round">Python, TypeScript</text>
-<text x="400" y="240" fill="#58a6ff" font-size="14" font-weight="500">— Public projects</text><path d="M557.5 236H840" stroke="#30363d"/>
-<text x="400" y="270" fill="#c9d1d9" font-size="14" font-weight="500">Microstructure optimisation</text>
-<text x="400" y="296" fill="#c9d1d9" font-size="14" font-weight="500">Genetic algorithms</text>
-<text x="400" y="322" fill="#c9d1d9" font-size="14" font-weight="500">LLM wiki compiler · fork</text>
+<text x="400" y="83" fill="#58a6ff" font-size="18" font-weight="600">Lorenzo Gentile, PhD</text>
+<text x="400" y="110" fill="#c9d1d9" font-size="14" font-weight="500">Co-Founder &amp; CTO at GenieAI</text>
+<path d="M400 130H840" stroke="#30363d"/>
+<text x="400" y="163" fill="#ffa657" font-size="14" font-weight="500">GitHub since:</text><path d="M520.5 159H840" stroke="#30363d" stroke-width="2" stroke-dasharray="2 6"/><text x="840" y="163" fill="#c9d1d9" font-size="14" font-weight="500" text-anchor="end" paint-order="stroke" stroke="#0d1117" stroke-width="8" stroke-linejoin="round">2018-02-26</text>
+<text x="400" y="192" fill="#ffa657" font-size="14" font-weight="500">Top languages:</text><path d="M529.0 188H840" stroke="#30363d" stroke-width="2" stroke-dasharray="2 6"/><text x="840" y="192" fill="#c9d1d9" font-size="14" font-weight="500" text-anchor="end" paint-order="stroke" stroke="#0d1117" stroke-width="8" stroke-linejoin="round">Python, TypeScript</text>
+<text x="400" y="240" fill="#58a6ff" font-size="14" font-weight="500">— Contact</text><path d="M489.5 236H840" stroke="#30363d"/>
+<text x="400" y="270" fill="#c9d1d9" font-size="13" font-weight="500">linkedin.com/in/lorenzo-gentile</text>
+<text x="400" y="301" fill="#c9d1d9" font-size="13" font-weight="500">lorengentile1892@gmail.com</text>
 <text x="400" y="362" fill="#58a6ff" font-size="14" font-weight="500">— Activity · Last 12 months</text><path d="M642.5 358H840" stroke="#30363d"/>
 <text x="400" y="393" fill="#ffa657" font-size="14" font-weight="500">Commits:</text><path d="M478.0 389H840" stroke="#30363d" stroke-width="2" stroke-dasharray="2 6"/><text x="840" y="393" fill="#c9d1d9" font-size="14" font-weight="500" text-anchor="end" paint-order="stroke" stroke="#0d1117" stroke-width="8" stroke-linejoin="round">838</text>
 <text x="400" y="422" fill="#ffa657" font-size="14" font-weight="500">Lines added:</text><path d="M512.0 418H840" stroke="#30363d" stroke-width="2" stroke-dasharray="2 6"/><text x="840" y="422" fill="#7ee787" font-size="14" font-weight="500" text-anchor="end" paint-order="stroke" stroke="#0d1117" stroke-width="8" stroke-linejoin="round">+619,842</text>

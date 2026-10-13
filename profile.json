@@ -1,7 +1,11 @@
 {
   "username": "LorenzoGentile",
-  "name": "Lorenzo Gentile",
-  "projects": ["Microstructure optimisation", "Genetic algorithms", "LLM wiki compiler · fork"],
+  "name": "Lorenzo Gentile, PhD",
+  "role": "Co-Founder & CTO at GenieAI",
+  "contact": {
+    "linkedin": "linkedin.com/in/lorenzo-gentile",
+    "email": "lorengentile1892@gmail.com"
+  },
   "stats": {
     "includePrivate": true,
     "period": "last-year",
