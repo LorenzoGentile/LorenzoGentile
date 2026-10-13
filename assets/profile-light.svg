@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="880" height="600" viewBox="0 0 880 600" role="img" aria-labelledby="title desc">
 <title id="title">Lorenzo Gentile, PhD — GitHub profile</title>
-<desc id="desc">Lorenzo Gentile, PhD. Co-Founder &amp; CTO at GenieAI. ASCII style portrait. Last 12 months; Public + private accessible repositories, default branches, non-merge commits. 843 commits, 620162 lines added, 140786 lines removed, 187 active days. Line counts include all tracked text files.</desc>
+<desc id="desc">Lorenzo Gentile, PhD. Co-Founder &amp; CTO at GenieAI. ASCII style portrait. Last 12 months; Public + private accessible repositories, default branches, non-merge commits. 844 commits, 620470 lines added, 141002 lines removed, 187 active days. Line counts include all tracked text files.</desc>
 <style>
     .command { animation: type-in 1.1s steps(24, end) both; }
     .result { animation: reveal 1.5s ease-out both; }
@@ -72,9 +72,9 @@
 <text x="400" y="292" fill="#0969da" font-size="14" font-weight="500">— Interests</text><path d="M506.5 288H840" stroke="#d0d7de"/>
 <text x="400" y="320" fill="#24292f" font-size="12" font-weight="500">Software development · Startups · AI · Finance · Crypto</text>
 <text x="400" y="373" fill="#0969da" font-size="14" font-weight="500">— Activity · Last 12 months</text><path d="M642.5 369H840" stroke="#d0d7de"/>
-<text x="400" y="407" fill="#9a4800" font-size="14" font-weight="500">Commits:</text><path d="M478.0 403H840" stroke="#d0d7de" stroke-width="2" stroke-dasharray="2 6"/><text x="840" y="407" fill="#24292f" font-size="14" font-weight="500" text-anchor="end" paint-order="stroke" stroke="#ffffff" stroke-width="8" stroke-linejoin="round">843</text>
-<text x="400" y="436" fill="#9a4800" font-size="14" font-weight="500">Lines added:</text><path d="M512.0 432H840" stroke="#d0d7de" stroke-width="2" stroke-dasharray="2 6"/><text x="840" y="436" fill="#1a7f37" font-size="14" font-weight="500" text-anchor="end" paint-order="stroke" stroke="#ffffff" stroke-width="8" stroke-linejoin="round">+620,162</text>
-<text x="400" y="465" fill="#9a4800" font-size="14" font-weight="500">Lines removed:</text><path d="M529.0 461H840" stroke="#d0d7de" stroke-width="2" stroke-dasharray="2 6"/><text x="840" y="465" fill="#cf222e" font-size="14" font-weight="500" text-anchor="end" paint-order="stroke" stroke="#ffffff" stroke-width="8" stroke-linejoin="round">−140,786</text>
+<text x="400" y="407" fill="#9a4800" font-size="14" font-weight="500">Commits:</text><path d="M478.0 403H840" stroke="#d0d7de" stroke-width="2" stroke-dasharray="2 6"/><text x="840" y="407" fill="#24292f" font-size="14" font-weight="500" text-anchor="end" paint-order="stroke" stroke="#ffffff" stroke-width="8" stroke-linejoin="round">844</text>
+<text x="400" y="436" fill="#9a4800" font-size="14" font-weight="500">Lines added:</text><path d="M512.0 432H840" stroke="#d0d7de" stroke-width="2" stroke-dasharray="2 6"/><text x="840" y="436" fill="#1a7f37" font-size="14" font-weight="500" text-anchor="end" paint-order="stroke" stroke="#ffffff" stroke-width="8" stroke-linejoin="round">+620,470</text>
+<text x="400" y="465" fill="#9a4800" font-size="14" font-weight="500">Lines removed:</text><path d="M529.0 461H840" stroke="#d0d7de" stroke-width="2" stroke-dasharray="2 6"/><text x="840" y="465" fill="#cf222e" font-size="14" font-weight="500" text-anchor="end" paint-order="stroke" stroke="#ffffff" stroke-width="8" stroke-linejoin="round">−141,002</text>
 <text x="400" y="494" fill="#9a4800" font-size="14" font-weight="500">Active days:</text><path d="M512.0 490H840" stroke="#d0d7de" stroke-width="2" stroke-dasharray="2 6"/><text x="840" y="494" fill="#24292f" font-size="14" font-weight="500" text-anchor="end" paint-order="stroke" stroke="#ffffff" stroke-width="8" stroke-linejoin="round">187</text>
 <text x="400" y="522" fill="#57606a" font-size="10" font-weight="500">Lines include code, docs and generated files</text>
 </g>
