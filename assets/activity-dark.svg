@@ -6,34 +6,35 @@
 <text x="28" y="36" fill="#58a6ff" font-size="18" text-anchor="start">Coding rhythm</text>
 <text x="28" y="60" fill="#8b949e" font-size="11" text-anchor="start">Last 12 months · Public + private · Europe/Rome</text>
 <text x="28" y="102" fill="#ffa657" font-size="14" text-anchor="start">By day of the week</text>
+<text x="413" y="102" fill="#8b949e" font-size="10" text-anchor="end">Scale: 0–30%</text>
 <text x="468" y="102" fill="#ffa657" font-size="14" text-anchor="start">By time of day</text>
 <text x="28" y="133" fill="#c9d1d9" font-size="12" text-anchor="start">Mon</text>
 <rect x="75" y="125" width="196" height="7" rx="3.5" fill="#30363d"/>
-<rect x="75" y="125" width="34.77" height="7" rx="3.5" fill="#58a6ff"/>
+<rect x="75" y="125" width="115.89" height="7" rx="3.5" fill="#58a6ff"/>
 <text x="413" y="133" fill="#8b949e" font-size="11" text-anchor="end">138 · 17.7%</text>
 <text x="28" y="160" fill="#c9d1d9" font-size="12" text-anchor="start">Tue</text>
 <rect x="75" y="152" width="196" height="7" rx="3.5" fill="#30363d"/>
-<rect x="75" y="152" width="43.33" height="7" rx="3.5" fill="#58a6ff"/>
+<rect x="75" y="152" width="144.44" height="7" rx="3.5" fill="#58a6ff"/>
 <text x="413" y="160" fill="#8b949e" font-size="11" text-anchor="end">172 · 22.1%</text>
 <text x="28" y="187" fill="#c9d1d9" font-size="12" text-anchor="start">Wed</text>
 <rect x="75" y="179" width="196" height="7" rx="3.5" fill="#30363d"/>
-<rect x="75" y="179" width="42.83" height="7" rx="3.5" fill="#58a6ff"/>
+<rect x="75" y="179" width="142.76" height="7" rx="3.5" fill="#58a6ff"/>
 <text x="413" y="187" fill="#8b949e" font-size="11" text-anchor="end">170 · 21.9%</text>
 <text x="28" y="214" fill="#c9d1d9" font-size="12" text-anchor="start">Thu</text>
 <rect x="75" y="206" width="196" height="7" rx="3.5" fill="#30363d"/>
-<rect x="75" y="206" width="45.10" height="7" rx="3.5" fill="#58a6ff"/>
+<rect x="75" y="206" width="150.32" height="7" rx="3.5" fill="#58a6ff"/>
 <text x="413" y="214" fill="#8b949e" font-size="11" text-anchor="end">179 · 23.0%</text>
 <text x="28" y="241" fill="#c9d1d9" font-size="12" text-anchor="start">Fri</text>
 <rect x="75" y="233" width="196" height="7" rx="3.5" fill="#30363d"/>
-<rect x="75" y="233" width="29.48" height="7" rx="3.5" fill="#58a6ff"/>
+<rect x="75" y="233" width="98.25" height="7" rx="3.5" fill="#58a6ff"/>
 <text x="413" y="241" fill="#8b949e" font-size="11" text-anchor="end">117 · 15.0%</text>
 <text x="28" y="268" fill="#c9d1d9" font-size="12" text-anchor="start">Sat</text>
 <rect x="75" y="260" width="196" height="7" rx="3.5" fill="#30363d"/>
-<rect x="75" y="260" width="0.25" height="7" rx="3.5" fill="#58a6ff"/>
+<rect x="75" y="260" width="0.84" height="7" rx="3.5" fill="#58a6ff"/>
 <text x="413" y="268" fill="#8b949e" font-size="11" text-anchor="end">1 · 0.1%</text>
 <text x="28" y="295" fill="#c9d1d9" font-size="12" text-anchor="start">Sun</text>
 <rect x="75" y="287" width="196" height="7" rx="3.5" fill="#30363d"/>
-<rect x="75" y="287" width="0.25" height="7" rx="3.5" fill="#58a6ff"/>
+<rect x="75" y="287" width="0.84" height="7" rx="3.5" fill="#58a6ff"/>
 <text x="413" y="295" fill="#8b949e" font-size="11" text-anchor="end">1 · 0.1%</text>
 <text x="468" y="133" fill="#c9d1d9" font-size="11" text-anchor="start">Morning 06–12</text>
 <text x="840" y="133" fill="#8b949e" font-size="11" text-anchor="end">235 · 30.2%</text>

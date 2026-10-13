@@ -23,6 +23,8 @@ is maintained manually in `profile.json` or the README.
 - Active days, weekdays and time-of-day buckets use `stats.timezone` (initially
   `Europe/Rome`), including daylight-saving changes. The date window uses commit
   dates. Morning is 06–12, afternoon 12–18, evening 18–24 and night 00–06.
+  Weekday bars use a fixed 0–30% visual scale, capped at the full bar width;
+  their numeric labels always show the actual share of commits.
 - Languages include every language returned by GitHub's repository languages API
   for each non-fork repository with your commits in the selected period. The
   percentages use the sum of current code bytes per language, including secondary

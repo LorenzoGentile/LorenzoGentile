@@ -267,12 +267,13 @@ def render_activity(mode, config, stats):
     text(28, 36, "Coding rhythm", p["blue"], 18)
     text(28, 60, f'{period} · {stats["scope"]} · {stats["timezone"]}', p["muted"], 11)
     text(28, 102, "By day of the week", p["orange"], 14)
+    text(413, 102, "Scale: 0–30%", p["muted"], 10, "end")
     text(468, 102, "By time of day", p["orange"], 14)
     for index, (day, count) in enumerate(stats["weekdays"].items()):
         y = 133 + index * 27
         fraction = count / stats["commits"] if stats["commits"] else 0
         text(28, y, day[:3])
-        bar(75, y - 8, 196, fraction, p["blue"])
+        bar(75, y - 8, 196, min(fraction / 0.30, 1), p["blue"])
         text(413, y, f"{count:,} · {fraction:.1%}", p["muted"], 11, "end")
     ranges = ("06–12", "12–18", "18–24", "00–06")
     for index, ((label, count), hours) in enumerate(zip(stats["times"].items(), ranges)):
