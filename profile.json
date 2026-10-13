@@ -1,0 +1,11 @@
+{
+  "username": "LorenzoGentile",
+  "name": "Lorenzo Gentile",
+  "languages": ["Python", "R"],
+  "projects": ["Microstructure optimisation", "Genetic algorithms", "LLM wiki compiler · fork"],
+  "stats": {
+    "includePrivate": true,
+    "period": "last-year",
+    "timezone": "Europe/Rome"
+  }
+}

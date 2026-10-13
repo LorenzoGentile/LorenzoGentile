@@ -1,16 +1,22 @@
-## Hi there 👋
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/profile-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="assets/profile-light.svg">
+  <img width="100%" alt="Lorenzo Gentile — Python, R, microstructure optimisation, genetic algorithms. Commits, lines added and removed, and active days across accessible public and private repositories." src="assets/profile-dark.svg">
+</picture>
 
-<!--
-**LorenzoGentile/LorenzoGentile** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+```python
+lorenzo = {
+    "languages": ["Python", "R"],
+    "interests": ["Microstructure optimisation", "Genetic algorithms", "LLM tooling"],
+}
+```
 
-Here are some ideas to get you started:
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/activity-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="assets/activity-light.svg">
+  <img width="100%" alt="Coding rhythm — commits by weekday and time of day in Europe/Rome, and primary languages across active repositories." src="assets/activity-dark.svg">
+</picture>
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+<sub>Activity across accessible public and private repositories. <a href="docs/profile-stats.md">How these numbers are counted</a>.</sub>
+
+<!-- Edit profile.json to change the profile text and statistics period. -->
