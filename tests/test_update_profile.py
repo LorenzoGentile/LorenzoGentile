@@ -15,6 +15,7 @@ import update_profile as profile
 NOW = datetime(2026, 10, 13, 10, tzinfo=timezone.utc)
 CONFIG = {
     "username": "example", "name": "A & B",
+    "interests": ["Software development", "Startups", "AI", "Finance"],
     "role": "Co-Founder & CTO", "contact": {"linkedin": "linkedin.com/in/example", "email": "example@example.com"},
     "stats": {"includePrivate": True, "period": "last-year"},
 }
