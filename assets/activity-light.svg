@@ -25,24 +25,24 @@
 <text x="468" y="102" fill="#9a4800" font-size="14" text-anchor="start">By time of day</text>
 <text x="28" y="133" fill="#24292f" font-size="12" text-anchor="start">Mon</text>
 <rect x="75" y="125" width="196" height="7" rx="3.5" fill="#d0d7de"/>
-<rect x="75" y="125" width="133.53" height="7" rx="3.5" fill="#0969da"/>
-<text x="413" y="133" fill="#57606a" font-size="11" text-anchor="end">177 · 20.4%</text>
+<rect x="75" y="125" width="135.17" height="7" rx="3.5" fill="#0969da"/>
+<text x="413" y="133" fill="#57606a" font-size="11" text-anchor="end">180 · 20.7%</text>
 <text x="28" y="160" fill="#24292f" font-size="12" text-anchor="start">Tue</text>
 <rect x="75" y="152" width="196" height="7" rx="3.5" fill="#d0d7de"/>
-<rect x="75" y="152" width="138.06" height="7" rx="3.5" fill="#0969da"/>
-<text x="413" y="160" fill="#57606a" font-size="11" text-anchor="end">183 · 21.1%</text>
+<rect x="75" y="152" width="138.18" height="7" rx="3.5" fill="#0969da"/>
+<text x="413" y="160" fill="#57606a" font-size="11" text-anchor="end">184 · 21.1%</text>
 <text x="28" y="187" fill="#24292f" font-size="12" text-anchor="start">Wed</text>
 <rect x="75" y="179" width="196" height="7" rx="3.5" fill="#d0d7de"/>
-<rect x="75" y="179" width="140.32" height="7" rx="3.5" fill="#0969da"/>
-<text x="413" y="187" fill="#57606a" font-size="11" text-anchor="end">186 · 21.5%</text>
+<rect x="75" y="179" width="139.68" height="7" rx="3.5" fill="#0969da"/>
+<text x="413" y="187" fill="#57606a" font-size="11" text-anchor="end">186 · 21.4%</text>
 <text x="28" y="214" fill="#24292f" font-size="12" text-anchor="start">Thu</text>
 <rect x="75" y="206" width="196" height="7" rx="3.5" fill="#d0d7de"/>
-<rect x="75" y="206" width="149.38" height="7" rx="3.5" fill="#0969da"/>
-<text x="413" y="214" fill="#57606a" font-size="11" text-anchor="end">198 · 22.9%</text>
+<rect x="75" y="206" width="148.69" height="7" rx="3.5" fill="#0969da"/>
+<text x="413" y="214" fill="#57606a" font-size="11" text-anchor="end">198 · 22.8%</text>
 <text x="28" y="241" fill="#24292f" font-size="12" text-anchor="start">Fri</text>
 <rect x="75" y="233" width="196" height="7" rx="3.5" fill="#d0d7de"/>
-<rect x="75" y="233" width="91.29" height="7" rx="3.5" fill="#0969da"/>
-<text x="413" y="241" fill="#57606a" font-size="11" text-anchor="end">121 · 14.0%</text>
+<rect x="75" y="233" width="90.87" height="7" rx="3.5" fill="#0969da"/>
+<text x="413" y="241" fill="#57606a" font-size="11" text-anchor="end">121 · 13.9%</text>
 <text x="28" y="268" fill="#24292f" font-size="12" text-anchor="start">Sat</text>
 <rect x="75" y="260" width="196" height="7" rx="3.5" fill="#d0d7de"/>
 <text x="413" y="268" fill="#57606a" font-size="11" text-anchor="end">0 · 0.0%</text>
@@ -51,17 +51,17 @@
 <rect x="75" y="287" width="0.75" height="7" rx="3.5" fill="#0969da"/>
 <text x="413" y="295" fill="#57606a" font-size="11" text-anchor="end">1 · 0.1%</text>
 <text x="468" y="133" fill="#24292f" font-size="11" text-anchor="start">Morning 06–12</text>
-<text x="840" y="133" fill="#57606a" font-size="11" text-anchor="end">259 · 29.9%</text>
+<text x="840" y="133" fill="#57606a" font-size="11" text-anchor="end">259 · 29.8%</text>
 <rect x="468" y="142" width="372" height="7" rx="3.5" fill="#d0d7de"/>
-<rect x="468" y="142" width="111.26" height="7" rx="3.5" fill="#1a7f37"/>
+<rect x="468" y="142" width="110.74" height="7" rx="3.5" fill="#1a7f37"/>
 <text x="468" y="179" fill="#24292f" font-size="11" text-anchor="start">Afternoon 12–18</text>
-<text x="840" y="179" fill="#57606a" font-size="11" text-anchor="end">525 · 60.6%</text>
+<text x="840" y="179" fill="#57606a" font-size="11" text-anchor="end">529 · 60.8%</text>
 <rect x="468" y="188" width="372" height="7" rx="3.5" fill="#d0d7de"/>
-<rect x="468" y="188" width="225.52" height="7" rx="3.5" fill="#1a7f37"/>
+<rect x="468" y="188" width="226.19" height="7" rx="3.5" fill="#1a7f37"/>
 <text x="468" y="225" fill="#24292f" font-size="11" text-anchor="start">Evening 18–24</text>
-<text x="840" y="225" fill="#57606a" font-size="11" text-anchor="end">81 · 9.4%</text>
+<text x="840" y="225" fill="#57606a" font-size="11" text-anchor="end">81 · 9.3%</text>
 <rect x="468" y="234" width="372" height="7" rx="3.5" fill="#d0d7de"/>
-<rect x="468" y="234" width="34.79" height="7" rx="3.5" fill="#1a7f37"/>
+<rect x="468" y="234" width="34.63" height="7" rx="3.5" fill="#1a7f37"/>
 <text x="468" y="271" fill="#24292f" font-size="11" text-anchor="start">Night 00–06</text>
 <text x="840" y="271" fill="#57606a" font-size="11" text-anchor="end">1 · 0.1%</text>
 <rect x="468" y="280" width="372" height="7" rx="3.5" fill="#d0d7de"/>
@@ -72,24 +72,24 @@
 <text x="28" y="393" fill="#57606a" font-size="11" text-anchor="start">Current code size (bytes) · GitHub language detection</text>
 <text x="28" y="426" fill="#24292f" font-size="11" text-anchor="start">Python</text>
 <rect x="220" y="418" width="425" height="7" rx="3.5" fill="#d0d7de"/>
-<rect x="220" y="418" width="259.60" height="7" rx="3.5" fill="#0969da"/>
-<text x="840" y="426" fill="#57606a" font-size="11" text-anchor="end">61.1%</text>
+<rect x="220" y="418" width="261.02" height="7" rx="3.5" fill="#0969da"/>
+<text x="840" y="426" fill="#57606a" font-size="11" text-anchor="end">61.4%</text>
 <text x="28" y="455" fill="#24292f" font-size="11" text-anchor="start">TypeScript</text>
 <rect x="220" y="447" width="425" height="7" rx="3.5" fill="#d0d7de"/>
-<rect x="220" y="447" width="128.28" height="7" rx="3.5" fill="#0969da"/>
-<text x="840" y="455" fill="#57606a" font-size="11" text-anchor="end">30.2%</text>
+<rect x="220" y="447" width="126.82" height="7" rx="3.5" fill="#0969da"/>
+<text x="840" y="455" fill="#57606a" font-size="11" text-anchor="end">29.8%</text>
 <text x="28" y="484" fill="#24292f" font-size="11" text-anchor="start">Jupyter Notebook</text>
 <rect x="220" y="476" width="425" height="7" rx="3.5" fill="#d0d7de"/>
 <rect x="220" y="476" width="11.89" height="7" rx="3.5" fill="#0969da"/>
 <text x="840" y="484" fill="#57606a" font-size="11" text-anchor="end">2.8%</text>
 <text x="28" y="513" fill="#24292f" font-size="11" text-anchor="start">PLpgSQL</text>
 <rect x="220" y="505" width="425" height="7" rx="3.5" fill="#d0d7de"/>
-<rect x="220" y="505" width="9.84" height="7" rx="3.5" fill="#0969da"/>
+<rect x="220" y="505" width="9.85" height="7" rx="3.5" fill="#0969da"/>
 <text x="840" y="513" fill="#57606a" font-size="11" text-anchor="end">2.3%</text>
 <text x="28" y="542" fill="#24292f" font-size="11" text-anchor="start">Other languages</text>
 <rect x="220" y="534" width="425" height="7" rx="3.5" fill="#d0d7de"/>
-<rect x="220" y="534" width="15.38" height="7" rx="3.5" fill="#0969da"/>
+<rect x="220" y="534" width="15.42" height="7" rx="3.5" fill="#0969da"/>
 <text x="840" y="542" fill="#57606a" font-size="11" text-anchor="end">3.6%</text>
 <text x="28" y="583" fill="#57606a" font-size="10" text-anchor="start">Default branches · non-merge commits · unique commit hashes</text>
-<text x="840" y="583" fill="#57606a" font-size="10" text-anchor="end">Updated 2026-11-02</text>
+<text x="840" y="583" fill="#57606a" font-size="10" text-anchor="end">Updated 2026-11-03</text>
 </g></g></svg>
