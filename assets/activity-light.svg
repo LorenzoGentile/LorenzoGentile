@@ -72,24 +72,24 @@
 <text x="28" y="393" fill="#57606a" font-size="11" text-anchor="start">Current code size (bytes) · GitHub language detection</text>
 <text x="28" y="426" fill="#24292f" font-size="11" text-anchor="start">Python</text>
 <rect x="220" y="418" width="425" height="7" rx="3.5" fill="#d0d7de"/>
-<rect x="220" y="418" width="260.26" height="7" rx="3.5" fill="#0969da"/>
+<rect x="220" y="418" width="260.15" height="7" rx="3.5" fill="#0969da"/>
 <text x="840" y="426" fill="#57606a" font-size="11" text-anchor="end">61.2%</text>
 <text x="28" y="455" fill="#24292f" font-size="11" text-anchor="start">TypeScript</text>
 <rect x="220" y="447" width="425" height="7" rx="3.5" fill="#d0d7de"/>
-<rect x="220" y="447" width="127.72" height="7" rx="3.5" fill="#0969da"/>
-<text x="840" y="455" fill="#57606a" font-size="11" text-anchor="end">30.1%</text>
+<rect x="220" y="447" width="127.67" height="7" rx="3.5" fill="#0969da"/>
+<text x="840" y="455" fill="#57606a" font-size="11" text-anchor="end">30.0%</text>
 <text x="28" y="484" fill="#24292f" font-size="11" text-anchor="start">Jupyter Notebook</text>
 <rect x="220" y="476" width="425" height="7" rx="3.5" fill="#d0d7de"/>
-<rect x="220" y="476" width="11.80" height="7" rx="3.5" fill="#0969da"/>
+<rect x="220" y="476" width="11.79" height="7" rx="3.5" fill="#0969da"/>
 <text x="840" y="484" fill="#57606a" font-size="11" text-anchor="end">2.8%</text>
 <text x="28" y="513" fill="#24292f" font-size="11" text-anchor="start">PLpgSQL</text>
 <rect x="220" y="505" width="425" height="7" rx="3.5" fill="#d0d7de"/>
-<rect x="220" y="505" width="9.77" height="7" rx="3.5" fill="#0969da"/>
+<rect x="220" y="505" width="9.76" height="7" rx="3.5" fill="#0969da"/>
 <text x="840" y="513" fill="#57606a" font-size="11" text-anchor="end">2.3%</text>
 <text x="28" y="542" fill="#24292f" font-size="11" text-anchor="start">Other languages</text>
 <rect x="220" y="534" width="425" height="7" rx="3.5" fill="#d0d7de"/>
-<rect x="220" y="534" width="15.46" height="7" rx="3.5" fill="#0969da"/>
-<text x="840" y="542" fill="#57606a" font-size="11" text-anchor="end">3.6%</text>
+<rect x="220" y="534" width="15.63" height="7" rx="3.5" fill="#0969da"/>
+<text x="840" y="542" fill="#57606a" font-size="11" text-anchor="end">3.7%</text>
 <text x="28" y="583" fill="#57606a" font-size="10" text-anchor="start">Default branches · non-merge commits · unique commit hashes</text>
-<text x="840" y="583" fill="#57606a" font-size="10" text-anchor="end">Updated 2026-11-06</text>
+<text x="840" y="583" fill="#57606a" font-size="10" text-anchor="end">Updated 2026-11-07</text>
 </g></g></svg>
